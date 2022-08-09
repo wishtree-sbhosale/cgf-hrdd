@@ -1,0 +1,9 @@
+.accordion-ttl{font-size: 14px !important;color: #F7A823;font-family: 'ProximaNova-Semibold' !important;}
+.accordion-blk{border-radius: 3px !important;box-shadow: none !important;}
+.accordion-summary{background: rgba(69, 150, 209, 0.05) !important;border-radius: 3px !important;}
+.accordion-blk .MuiAccordionSummary-expandIconWrapper .MuiSvgIcon-root{color: rgba(30, 30, 30, 1);}
+.accordion-blk .download-icon .MuiSvgIcon-root{color: #F7A823;}
+.accordion-blk .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {min-height: 54px;}
+.accordion-blk .css-o4b71y-MuiAccordionSummary-content.Mui-expanded{margin: 0;}
+.accordion-blk .filter-select-field svg{color: rgba(30, 30, 30, 0.6);}
+.accordion-blk .css-15v22id-MuiAccordionDetails-root{padding: 0;}

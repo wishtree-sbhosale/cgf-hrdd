@@ -1,0 +1,16 @@
+/* Login css */
+.login-page {background: #fff;}
+.login-section{padding: 78px 0;}
+.login-wrapper{display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;}
+.login-leftblk{flex: 0 0 50%;max-width: 50%;}
+.login-rightblk{flex: 0 0 50%;max-width: 50%;padding: 0 115px;}
+.login-slide-img{width: 62%;margin: 0 auto;}
+.login-slider .owl-theme .owl-dots .owl-dot.active span{background: #F7A823;border-color: #F7A823;}
+.login-slider .owl-theme .owl-dots .owl-dot span{background: #fff;border: 1px solid #1E1E1E;margin: 5px;}
+.login-slider .owl-theme .owl-nav.disabled+.owl-dots {margin-top: 40px;}
+.login-slider .owl-theme .owl-dots .owl-dot:hover span{background: #F7A823;}
+.login-form {margin: 40px 0 0;}
+.forgot-password-txt{color: #F7A823;font-family: 'Proxima Nova Semibold';padding-right: 10px;}
+.eye-btn {
+    padding: 14px !important;margin-right: -5px !important;
+}

@@ -1,0 +1,6 @@
+.pagination-blk .MuiPaginationItem-root.Mui-selected{background: #4596D1;color: #fff;border-color: #4596D1;}
+.pagination-blk .MuiPaginationItem-root{margin: 0;border: 1px solid rgba(30, 30, 30, 0.15);background: #fff;border-radius: 3px !important;font-family: 'ProximaNova-Regular';font-size: 14px;}
+.pagination-blk .MuiPaginationItem-previousNext{background: #fff !important;}
+.pagination-blk .MuiPaginationItem-ellipsis{border-radius: 3px;height: 32px;}
+.pagination-blk .MuiPaginationItem-root:hover{background: rgba(30, 30, 30, 0.05);color: #4596D1;border: none;}
+.pagination-blk .Mui-disabled{background: rgba(255,255,255,0) !important;}
