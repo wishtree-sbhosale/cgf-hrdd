@@ -1,6 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { TextField, Radio, RadioGroup, FormControlLabel} from '@mui/material';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 function AddMember() {
+    const [value, setValue] = useState()
   return (
     <div className="page-wrapper">
         <div className="breadcrumb-wrapper">
@@ -56,6 +59,18 @@ function AddMember() {
                         <div className="form-group">
                             <label for="emailid">Email Id <span className="mandatory">*</span></label>
                             <TextField className='input-field' id="outlined-basic" placeholder='Enter email id' variant="outlined" />
+                        </div>
+                    </div>
+                    <div className="card-form-field">
+                        <div className="form-group">
+                            <label for="emailid">Phone Number</label>
+                            <PhoneInput
+                            international
+                            defaultCountry="IN"
+                            value={value}
+                            onChange={setValue}
+                            className='phone-field'/>
+                        
                         </div>
                     </div>
                     <div className="form-btn flex-between add-members-btn">

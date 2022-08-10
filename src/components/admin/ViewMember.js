@@ -4,7 +4,11 @@ import {TextField, Backdrop, Box, Modal, Fade, Radio, RadioGroup, FormControlLab
 import AccordionCom from './Accordion';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CloseIcon from '@mui/icons-material/Close';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 function ViewMember() {
+    const [value, setValue] = useState()
+
     const history = useNavigate();
     const [isActive, setActive] = useState("false");
     const handleToggle = () => {setActive(!isActive);};
@@ -128,7 +132,7 @@ function ViewMember() {
                 </div>
                 
                 <div className="card-wrapper">
-                    <div className="card-blk flex-between">
+                    <div className="card-blk flex-between threefield-card-blk">
                     <div className="card-form-three-field">
                         <div className="form-group">
                             <label for="emailid">Member Company</label>
@@ -167,6 +171,20 @@ function ViewMember() {
                         <div className="form-group">
                             <label for="emailid">Email</label>
                             <TextField className='input-field' id="outlined-basic" value='henry@gmail.com' variant="outlined" />
+                        </div>
+                    </div>
+                    <div className="card-form-three-field">
+                        <div className="form-group">
+                            <label for="emailid">Phone Number</label>
+                            <PhoneInput
+                            international
+                            defaultCountry="IN"
+                            value={value}
+                            onChange={setValue}
+                            className='phone-field'
+                            disabled
+                            />
+                        
                         </div>
                     </div>
                     <div class="card-form-three-field">

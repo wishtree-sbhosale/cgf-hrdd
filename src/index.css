@@ -616,7 +616,9 @@ input[type=checkbox]:checked:before {
 
 
 /* View member css */
-.card-form-three-field {flex: 0 0 31.5%;max-width: 31.5%;}
+.threefield-card-blk{justify-content: flex-start;}
+.card-form-three-field {flex: 0 0 31.5%;max-width: 31.5%;margin-right: 28px;}
+.card-form-three-field:nth-child(3n+3){margin-right: 0;}
 .crud-operation{width: 26px;height: 26px;background: rgba(30, 30, 30, 0.2);border-radius: 100%;display: flex;justify-content: center;align-items: center;cursor: pointer;}
 .crud-operation svg{color: #1E1E1E;font-size: 20px;}
 .crud-toggle-wrap{width: 110px;background: #fff;box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.302);padding: 11px 0;display: none;top: 35px;display: block;position: absolute;left: -84px;;}
@@ -648,3 +650,37 @@ input[type=checkbox]:checked:before {
 .radio-btn svg:first-child path{color: #707070 ;}
 .radio-btn label{margin-right: 30px;}
 .checkbox-mui{color: #0082C9;}
+
+/* Phone field css */
+.phone-field input{-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  outline: 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 3px;
+  line-height: inherit;
+  background-image: none;
+  padding: 0 15px;
+  height: 45px;
+  border: 1px solid rgba(30, 30, 30, 0.5);
+  font-size: 14px;
+  color: #1E1E1E80;}
+.phone-field .PhoneInputCountry{border: 1px solid rgba(30, 30, 30, 0.5);
+  padding: 0 15px;
+  margin-right: 10px;border-radius: 3px;}
+  .phone-field .PhoneInputCountrySelectArrow {
+    margin-left: 10px;
+    color: #000;
+    width: 6px;
+    height: 6px;
+    margin-top: -1px;
+}
+.phone-field .PhoneInputCountryIcon{box-shadow: none;width: 18px;height: 12px;}
+.phone-field .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border{box-shadow: none;}
+.phone-field .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon + .PhoneInputCountrySelectArrow{color: #1E1E1E;}
+.phone-field.PhoneInput--disabled .PhoneInputCountry{background: rgba(30, 30, 30, 0.1);cursor: not-allowed;}
+.phone-field.PhoneInput--disabled .PhoneInputCountry select, .phone-field.PhoneInput--disabled input{cursor: not-allowed;}
+.phone-field input:hover, .phone-field .PhoneInputCountry:hover{border-color: rgba(30, 30, 30, 0.8);}

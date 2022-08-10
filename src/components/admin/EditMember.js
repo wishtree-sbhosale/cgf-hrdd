@@ -1,6 +1,9 @@
-import React from 'react'
-import { TextField, MenuItem, Select, Radio, RadioGroup, FormControlLabel} from '@mui/material';
+import React, {useState} from 'react'
+import { TextField, Radio, RadioGroup, FormControlLabel} from '@mui/material';
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
 function EditMember() {
+  const [value, setValue] = useState()
   return (
     <div className="page-wrapper">
         <div className="breadcrumb-wrapper">
@@ -51,6 +54,18 @@ function EditMember() {
                         <div className="form-group">
                             <label for="emailid">Email</label>
                             <TextField className='input-field' id="outlined-basic" value='henry@gmail.com' variant="outlined" disabled />
+                        </div>
+                    </div>
+                    <div className="card-form-field">
+                        <div className="form-group">
+                            <label for="emailid">Phone Number</label>
+                            <PhoneInput
+                            international
+                            defaultCountry="IN"
+                            value={value}
+                            onChange={setValue}
+                            className='phone-field'/>
+                        
                         </div>
                     </div>
                     <div class="card-form-field">
